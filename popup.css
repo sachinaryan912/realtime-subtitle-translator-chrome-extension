@@ -1,0 +1,39 @@
+/* popup.css */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    width: 200px;
+    background-color: #202020;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, button {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #3ea6ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3578e5;
+}

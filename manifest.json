@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Real-Time Translator",
+    "version": "1.0",
+    "description": "Translate YouTube subtitles in real-time.",
+    "permissions": ["scripting", "storage"],
+    "host_permissions": ["https://www.youtube.com/*"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/icon.png",
+        "48": "icons/icon.png",
+        "128": "icons/icon.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
